@@ -1,0 +1,275 @@
+body {
+    background-color: #f5e6fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-pessoal {
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(128, 60, 150, 0.2);
+}
+
+h1 {
+    color: #7b2cbf;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.foto {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 5px solid #e58adf;
+}
+
+p {
+    color: #4a3b4d;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.sites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.sites li {
+    width: 80px;
+    height: 80px;
+    background-color: #f8c8f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.sites li:hover {
+    transform: scale(1.08);
+}
+
+.sites a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.sites img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+a:focus-visible {
+    outline: 3px solid #7b2cbf;
+    outline-offset: 4px;
+}
+
+.table-responsive {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    --bs-table-bg: white;
+    --bs-table-border-color: #e2c4e9;
+}
+
+.table thead th {
+    background-color: #d8a7e8;
+    color: #4a205c;
+    padding: 15px;
+}
+
+.table td {
+    padding: 15px;
+    color: #4a3b4d;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #faf0fc;
+    color: #4a3b4d;
+}
+
+.rodape {
+    color: #7b2cbf;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+/* Personalização do novo card do Bootstrap */
+.card-destaque {
+    max-width: 540px;
+    margin: 0 auto 20px;
+    border: 1px solid #e2c4e9;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.imagem-card {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-destaque .card-title {
+    color: #7b2cbf;
+    margin-bottom: 15px;
+}
+
+.card-destaque .card-text {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.card-destaque .card-body {
+    padding: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        max-width: 90%;
+    }
+
+    .card-pessoal {
+        padding: 25px;
+    }
+
+    .sites {
+        gap: 28px;
+    }
+
+    .imagem-card {
+        height: 240px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 15px 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .card-pessoal {
+        margin: 15px 0;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .foto {
+        width: 170px;
+    }
+
+    .sites {
+        gap: 20px;
+    }
+
+    .sites li {
+        width: 65px;
+        height: 65px;
+    }
+
+    .sites img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .card-destaque .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-destaque .col-md-4,
+    .card-destaque .col-md-8 {
+        width: 100%;
+    }
+
+    .imagem-card {
+        height: 200px;
+        border-radius: 0;
+    }
+
+    .card-destaque .card-body {
+        padding: 20px;
+    }
+
+    .table-responsive table {
+        min-width: 420px;
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card-pessoal {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .sites {
+        gap: 15px;
+    }
+
+    .sites li {
+        width: 58px;
+        height: 58px;
+    }
+
+    .sites img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .card-destaque .card-body {
+        padding: 15px;
+    }
+
+    .table-responsive table {
+        min-width: 400px;
+    }
+}
